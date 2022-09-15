@@ -1,0 +1,419 @@
+<!--
+Web Page Structure
+1. User Stories (user experience)
+2. Create Wireframe (UI/UX layout/concept design for web/apps eg:lucidapp/figma)
+3. HTML
+4. CSS
+5. Test (in this case: "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" which run in js)
+-->
+
+<!--
+User Stories
+1. Your portfolio should have a welcome section with an id of welcome-section
+2. The welcome section should have an h1 element that contains text
+3. Your portfolio should have a projects section with an id of projects
+4. The projects section should contain at least one element with a class of project-tile to hold a project
+5. The projects section should contain at least one link to a project
+6. Your portfolio should have a navbar with an id of navbar
+7. The navbar should contain at least one link that you can click on to navigate to different sections of the page
+8. Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
+9. Your portfolio should have at least one media query
+10. The height of the welcome section should be equal to the height of the viewport
+11. The navbar should always be at the top of the viewport
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8091a9ce46.js" crossorigin="anonymous"></script>
+  <title>Aliff Ashraff Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <a class="nav-link" href="#welcome-section">Home</a>
+      <a class="nav-link" href="#about-section">About</a>
+      <a class="nav-link" href="#educations-section">Educations</a>
+      <a class="nav-link" href="#careers-section">Careers</a>
+      <a class="nav-link" href="#skills-section">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact-section">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="welcome-section">
+      <div class="welcome-content">
+        <h1>Aliff Ashraff</h1>
+        <p>Software Developer To Be</p>
+      </div>
+      <div class="welcome-image">
+        <img src="/Personal Portfolio Page/Images/Aliff Transparent 2.png" alt="Aliff Ashraff Image">
+      </div>
+    </section>
+    <section id="about-section">
+      <div class="about-title">
+        <h2>Welcome !</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="/Personal Portfolio Page/Images/circle-cropped.png" alt="Aliff Ashraff Image" width="500">
+        </div>
+        <div class="about-description">
+          <h3>Hi, I'm Aliff.</h3>
+          <p>A committed person with excellent skills and educational background in Electrical &
+            Electronics Engineering. Always being the pillar towards a team success in finishing
+            projects. A diligent worker that does not easy to give up regardless the challenges
+            and a detailed person that complete tasks given in excellent manner. A sociable
+            person which is easy to be approached by others. Passionate in learning new
+            knowledge and improving new skills especially in software and electronics field. Currently pursuing Masters Degree in Software Engineering in Universiti Putra Malaysia</p>
+        </div>
+      </div>
+    </section>
+    <section id="educations-section">
+      <div class="educations-title">
+        <h2>Educations</h2>
+      </div>
+      <div class="educations-content">
+        <div id="uitm">
+          <img src="/Personal Portfolio Page/Images/UiTM_Universiti_Teknologi_MARA_logo.png" alt="UiTM Logo" width="300">
+          <h3>Foundation in Engineering</h3>
+          <p>Dengkil, Selangor, Malaysia<br>August 2016 – September 2020<br>CGPA: 3.22/4.00</p>
+        </div>
+        <div id="ump">
+          <img src="/Personal Portfolio Page/Images/logo-ump-jawi-2021.png" alt="UMP Logo" width="300">
+          <h3>Bachelor of Engineering (Hons.) Electrical Engineering (Electronics)</h3>
+          <p>Pekan, Pahang, Malaysia<br>August 2016 – September 2020<br>CGPA: 3.72/4.00</p>
+        </div>
+        <div id="upm">
+          <img src="/Personal Portfolio Page/Images/20170406143426UPM-New_FINAL.jpg" alt="UPM Logo" width="300">
+          <h3>Master of Software Engineering</h3>
+          <p>Serdang, Selangor, Malaysia<br>October 2022 - Present</p>
+        </div>
+      </div>
+    </section>
+    <section id="careers-section">
+      <div class="careers-title">
+        <h2>Careers</h2>
+      </div>
+      <div class="careers-content">
+        <div id="tm">
+          <div class="tm-description">
+            <h3>Executive Trainee</h3>
+            <p>March 2021 – November 2021</p>
+            <ul>
+              <li>
+                Work under Group Network Technology in Network Operation team that in charge end line distribution from exchange tower to customer premises.
+              </li>
+              <li>Organize teams to be distributed in order to f inish the request from the
+                customers without delay and identify the problem faced by the customers
+                before assigning technicians to be in charge.
+              </li>
+              <li>Assist in doing regular checkup work done by the TM contractors towards
+                customer premises.
+              </li>
+              <li>Do research for the current Optical Network Unit (ONU) in identifying the
+                problem that always occur that make the failure percentage increase.
+              </li>
+            </ul>
+          </div>
+          <div class="tm-title">
+            <img src="/Personal Portfolio Page/Images/1200px-Logo_of_the_Telekom_Malaysia.svg.png" alt="TM Logo" width="250">
+            <h3>Telekom Malaysia Berhad</h3>
+          </div>
+        </div>
+        <div id="ii-vi">
+          <div class="ii-vi-title">
+            <img src="/Personal Portfolio Page/Images/II-VI-Logo-Icon-RGB-750w.png" alt="II-VI Logo" width="250">
+            <h3>II-VI Incorporated</h3>
+          </div>
+          <div class="ii-vi-description">
+            <h3>Test Engineer</h3>
+            <p>November 2020 – March 2021</p>
+            <ul>
+              <li>In charge of taking care Longwave Production Testers and take part in the
+                preventive maintenance task for the testers.
+              </li>
+              <li>Took over the task in leading a team to finish the testers relocation project.</li>
+              <li>Process and analyze the data including the failure analysis as well as
+                presenting the weekly yield report.
+              </li>
+              <li>Understand, updating and in charge to take care the test plan for the testers
+                in every testing process and monitor the Statistical Process Control
+              </li>
+              <li>Propose a project to reduce the product rejects by handling an experiment as
+                well as collecting data from new tester’s hotplate.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="mias">
+          <div class="mias-description">
+            <h3>Engineering Intern</h3>
+            <p>June 2019 – August 2019</p>
+            <ul>
+              <li>Took over the task that involved in wire trunking for the Press Automation
+                Transfer Robots and responsible in reading the ladder logic before proceeding
+                in panel wiring for the control panels.
+              </li>
+              <li>Played a key role in disassembling and assembling the sealant pumps based
+                on the mechanical drawing when servicing the sealant pumps.
+              </li>
+            </ul>
+          </div>
+          <div class="mias-title">
+            <img src="/Personal Portfolio Page/Images/imageedit_5_4639294349.png" alt="MIAS Logo" width="250">
+            <h3>MIAS Global Sdn. Bhd.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills-section">
+      <div class="skills-title">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-content">
+        <div id="programming">
+          <h3>Programming</h3>
+          <ul>
+            <li>
+              <span class="ability-title">C</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">C++</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">HTML(5)</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">CSS(3)</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">Ladder Logic</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div id="tools">
+          <h3>Tools</h3>
+          <ul>
+            <li>
+              <span class="ability-title">MS Office Word</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">MS Office PowerPoint</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">MS Office Excel</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">MATLAB</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">Arduino</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">CX Programmer</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">Xillinx ISE</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">JMP</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">Keil uVision</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div id="language">
+          <h3>Language</h3>
+          <ul>
+            <li>
+              <span class="ability-title">English</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">Malay</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span>
+            </li>
+            <li>
+              <span class="ability-title">Japanese</span>
+              <span class="score">
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects-title">
+        <h2>Projects</h2>
+      </div>
+      <div class="project-tile">
+        <a id="steve-jobs" href="https://codepen.io/aliffashraff/full/eYEayNb" target="_blank">
+          <img src="/Personal Portfolio Page/Images/Steve jobs.JPG" alt="Steve Jobs Tibute Image" width="300" height="300">
+          <p>Steve Jobs Tribute Page</p>
+        </a>
+        <a id="survey" href="https://codepen.io/aliffashraff/full/zYENzWo" target="_blank">
+          <img src="/Personal Portfolio Page/Images/Survey.JPG" alt="Survey Form Image" width="300" height="300">
+          <p>Survey Form Page</p>
+        </a>
+        <a id="pocketalk" href="https://codepen.io/aliffashraff/full/poWpyJG" target="_blank">
+          <img src="/Personal Portfolio Page/Images/Pocketalk.JPG" alt="Pocketalk Page Image" width="300" height="300">
+          <p>Pocketalk Product Landing Page</p>
+        </a>
+        <a id="basketball" href="https://codepen.io/aliffashraff/full/rNvxvpg" target="_blank">
+          <img src="/Personal Portfolio Page/Images/Basketball.JPG" alt="Basketball Documentation Images" width="300" height="300">
+          <p>Basketball Documentation Page</p>
+        </a>
+      </div>
+      <div class="codepen">
+        <button class="show-more">
+          <a id="profile-link" href="https://codepen.io/aliffashraff" target="_blank">Show More &nbsp;<i class="fas fa-chevron-circle-right"></i></a>
+        </button>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div class="contact-title">
+        <h2>Stay Connected!</h2>
+      </div>
+      <div class="contact-content">
+        <a id="linkedin" href="https://www.linkedin.com/in/muhammad-aliff-ashraff-zulkiffli/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a id="github" href="https://github.com/aliffashraff" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a id="instagram" href="https://www.instagram.com/aliffchacho/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a id="twitter" href="https://twitter.com/aliffchacho" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a id="facebook" href="https://www.facebook.com/aliffzulkiffli97/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

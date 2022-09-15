@@ -1,0 +1,139 @@
+#navbar{
+  display: block;
+  position: fixed;
+  width: 300px;
+  min-width: 290px;
+  top: 0%;
+  left: 0%;
+  border-right: 2px solid;
+  height: 100%;
+}
+
+#navbar header{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+#nav{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  height: 83%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-top: 1px solid;
+}
+
+.main-nav{
+  border-top: 1px solid;
+  padding: 10px 10px 10px 20px;
+  font-size: 18px;
+}
+.sub-nav{
+  font-size: 16px;
+}
+
+#nav a{
+  display: block;
+  cursor: pointer;
+}
+
+#nav a:visited, #nav a:link{
+  color: rgb(86, 80, 80); 
+  text-decoration: none;
+}
+
+#nav a:active{
+  text-decoration: underline;
+}
+
+#nav .main-nav a:hover{
+  color: black;
+  font-size: 19px;
+}
+
+#nav .sub-nav a:hover{
+  color: black; 
+  font-size: 17px;
+}
+
+main{
+  position: absolute;
+  height: 100%;
+  margin-left: 310px;
+  padding: 10px 30px 10px 20px;
+}
+
+#main-doc header{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+#main-doc p, #main-doc li{
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  color: rgb(86, 80, 80);
+  text-align: justify;
+}
+
+code{
+  color: rgb(86, 80, 80); 
+  font-size: 14px;
+}
+
+#Positions ol{
+  background-color: rgb(245, 245, 252);
+}
+
+.div-col ul{
+  column-count: 4;
+}
+
+#Reference p{
+  padding-bottom: 30px;
+}
+
+#Reference a:link, #Reference a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+#Reference a:hover{
+  font-size: 18px;
+}
+
+#Reference a:active{
+  text-decoration: underline;
+}
+
+@media screen and (max-width:830px){
+  #navbar{
+    width: 100%;
+    min-width: none;
+  }
+
+  #nav{
+    height: 35%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: auto;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+  }
+
+  main{
+    height:53%;
+    position: fixed;
+    margin-left: 0%;
+    margin-top: 300px;
+    overflow: auto;
+    padding: 5px 30px 10px 20px;
+  }
+}

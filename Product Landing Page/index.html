@@ -1,0 +1,246 @@
+<!--
+Web Page Structure
+1. User Stories (user experience)
+2. Create Wireframe (UI/UX layout/concept design for web/apps eg:lucidapp/figma)
+3. HTML
+4. CSS
+5. Test (in this case: "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" which run in js)
+-->
+
+<!--
+User Stories
+1. header element with id="header"
+2. image in header element with id="header-img" (company logo)
+3. nav element in #header with id="nav-bar"
+4. at least 3 clickable area inside nav element, each with class nav-link
+5. when click .nav-link button in nav element, directed to the landing page
+6. embedded product video with id="video"
+7. form element with id="form"
+8. input field with id="email"
+9. placeholder in #email
+10. provide email validation and format 
+11. submit input with id="submit" in the form
+12. when click #submit email is submitted to static page (url: https://www.freecodecamp.com/email-submit)
+13. navbar always top of viewport
+14. at least one media query
+15. use CSS flexbox
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8091a9ce46.js" crossorigin="anonymous"></script>
+  <title>Pocketalk</title>
+</head>
+<header id="header">
+  <div id="logo">
+    <a id="logo-link" href="#">
+      <img id="header-img" src="/Product Landing Page/Images/logo.jpg" alt="pocketalk logo">
+    </a>
+  </div>
+  <div id="nav">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a> &nbsp; &nbsp; &nbsp; 
+      <a class="nav-link" href="#products">Products</a> &nbsp; &nbsp; &nbsp;
+      <a class="accessories" href="https://www.pocketalk.com/product/" target="_blank">Accessories</a> &nbsp; &nbsp; &nbsp;
+      <a class="nav-link" href="#reviews">Reviews</a> &nbsp; &nbsp; &nbsp;
+      <a class="business" href="https://www.pocketalk.com/business/" target="_blank">Business</a> &nbsp; &nbsp; &nbsp;
+      <a class="support" href="https://www.pocketalk.com/pocketalk-faq/" target="_blank">Support</a> &nbsp; &nbsp; &nbsp;
+      <a class="nav-link" href="#more">More</a> &nbsp; &nbsp; &nbsp;
+    </nav>
+  </div>  
+  <div id="nav-search">
+    <form id="search" action="https://www.freecodecamp.com/email-submit" autocomplete="on">
+      <input id="search-bar" type="search" name="search-bar" placeholder="Search" under>
+      <button id="search-button" type="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+    </form>
+  </div>
+  <div id="nav-cart">
+    <a href="https://www.pocketalk.com/products/" target="_blank">
+      <i id="cart" class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </a>
+  </div>
+</header>
+<body>
+  <main id="main">
+    <section id="title">
+      <div id="title-content">
+        <h1>Pocketalk Plus</h1><br>
+        <p>82 language translation.</p>
+        <p>Bigger and better in every way.</p><br><br>
+        <a id="shop-now" href="https://www.pocketalk.com/products/" target="_blank">
+          <button><i class="fas fa-arrow-circle-right"></i>&nbsp; Shop Now</button>
+        </a>
+      </div>
+      <div id="register">
+        <h2>Getting Started</h2>
+        <p>Get free updates here</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank" autocomplete="on">
+          <label id="name-label" for="name">Name</label><br>
+          <input id="name" type="text" name="name" placeholder="Full name" required><br>
+          <label id="email-label" for="email">Email</label><br>
+          <input id="email" type="email" name="email" placeholder="Email address" required><br>
+          <input id="submit" type="submit" value="Register Now">
+        </form>
+      </div>
+    </section>
+    <section id="features">
+      <div id="features-content">
+        <div id="translation">
+          <div class="translation-desc">
+            <h1>Two-way voice translation</h1>
+            <P>Pocketalk is a multi-sensory two-way translation device that utilizes the best translation engines around the world to provide accurate audio translations across 82 languages, including localized dialects and slang.</P>
+            <a id="learn-more" href="https://www.pocketalk.com/features/" target="_blank">
+              <button>Learn More &nbsp;<i class="fas fa-chevron-circle-right"></i></button>
+            </a>
+          </div>
+          <div class="translation-img">
+            <img id="voice-translation-img" src="/Product Landing Page/Images/device-front.png" alt="pocketalk voice translation image">
+            <video id="voice-translation-vid" src="/Product Landing Page//Images/voice translation.mp4" autoplay loop controls>Your browser does not support the video</video>
+          </div>
+        </div>
+        <div id="camera">
+          <div class="camera-desc">
+            <h1>Image translation</h1>
+            <p>The Pocketalk camera takes a photo and the large touchscreen displays translated text directly on top of the image as it includes visual translation for 55 languages via camera. Pocketalk can provide an optional audio translation for the camera-translated text as well.</p>
+            <a id="learn-more" href="https://www.pocketalk.com/features/" target="_blank">
+              <button>Learn More &nbsp;<i class="fas fa-chevron-circle-right"></i></button>
+            </a>
+          </div>
+          <div class="camera-img">
+            <img id="camera-translation-img" src="/Product Landing Page/Images/device-front.png" alt="pocketalk camera translation image">
+            <video id="camera-translation-vid" src="/Product Landing Page//Images/camera translation.mp4" autoplay loop controls>Your browser does not support the video</video>
+          </div>
+        </div>
+        <div id="built-in">
+          <div class="built-in-desc">
+            <h1>Built-in mobile data</h1>
+            <p>Pocketalk comes with a two-year LTE data plan that provides unlimited data usage in over 130 countries. In addition, Pocketalk can communicate via Wifi, a personal hotspot or swappable SIM card.</p>
+            <a id="learn-more" href="https://www.pocketalk.com/features/" target="_blank">
+              <button>Learn More &nbsp;<i class="fas fa-chevron-circle-right"></i></button>
+            </a>
+          </div>
+          <div class="built-in-img">
+            <img id="built-in-img" src="/Product Landing Page/Images/device-built-in-sim.jpg" alt="pocketalk camera translation image">
+          </div>
+        </div>
+        <div id="vid">
+          <div class="vid-section">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Gvi8iDJ34Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vid-desc-section">
+            <h1>Say hello to Pocketalk</h1>
+            <p>Practice your pronunciation with various language with Pocketalk</p>
+            <a id="learn-more" href="https://www.pocketalk.com/features/" target="_blank">
+              <button>Learn More &nbsp;<i class="fas fa-chevron-circle-right"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <div id="pocketalk-plus">
+        <h1>Pocketalk Plus</h1>
+        <img id="p-plus" src="/Product Landing Page/Images/pocketalk-plus.jpg" alt="Pocketalk Plus image">
+        <a id="shop-now" href="https://www.pocketalk.com/product/pocketalk-plus/" target="_blank">
+          <button><i class="fas fa-arrow-circle-right"></i>&nbsp; Shop Now</button>
+        </a>
+        <ul>
+          <li>40% larger touchscreen</li>
+          <li>1.5x better battery life</li>
+          <li>High quality noise-cancelling microphones and two powerful speakers</li>
+        </ul>
+      </div>
+      <div id="pocketalk-s">
+        <h1>Pocketalk S</h1>
+        <img id="p-s" src="/Product Landing Page/Images/pocketalk s.jpg" alt="Pocketalk S image">
+        <a id="shop-now" href="https://www.pocketalk.com/product/pocketalk-voice-translator/" target="_blank">
+          <button><i class="fas fa-arrow-circle-right"></i>&nbsp; Shop Now</button>
+        </a>
+        <ul>
+          <li>Sleek design with large touchscreen</li>
+          <li>Text-to-translate camera</li>
+          <li>Conversion currency, length and temperature</li>
+        </ul>
+      </div>
+      <div id="pocketalk-classic">
+        <h1>Pocketalk Classic</h1>
+        <img id="p-classic" src="/Product Landing Page/Images/pocketalk classic.jpg" alt="Pocketalk Classic image">
+        <a id="shop-now" href="https://www.pocketalk.com/product/pocketalk-classic/" target="_blank">
+          <button><i class="fas fa-arrow-circle-right"></i>&nbsp; Shop Now</button>
+        </a>
+        <ul>
+          <li>Supports 82 languages</li>
+          <li>Easy to use</li>
+          <li>Small and compact</li>
+        </ul>
+      </div>
+    </section>
+    <section id="reviews">
+      <div id="pcmag">
+        <div class="pcmag-img-section">
+          <img id="pcmag-img" src="/Product Landing Page/Images/pcmag.png" alt="PCMAG image">
+        </div> 
+        <div class="pcmag-desc-section">
+          <p>With a large screen, multi-week battery life, speech and text translation, and two years of free data around the world, the Pocketalk Plus is the best translator on the market.</p>
+          <a id="read-more" href="https://www.pcmag.com/reviews/pocketalk-plus" target="_blank">Read More &nbsp;<i class="fas fa-chevron-circle-right"></i>
+          </a>
+        </div>
+      </div>
+      <div id="wall-street">
+        <img id="wall-street-img" src="/Product Landing Page/Images/wall-street logo.png" alt="Wall Street logo">
+        <p>For your favorite jet-setter, this portable, A.I.-powered translator is sure to break down barriers—language or otherwise—in the New Year.</p>
+        <a id="read-more" href="https://www.pcmag.com/reviews/pocketalk-plus" target="_blank">Read More &nbsp;<i class="fas fa-chevron-circle-right"></i>
+        </a>
+      </div>
+      <div id="heavy">
+        <img id="heavy-img" src="/Product Landing Page/Images/heavy. logo.png" alt="Heavy logo">
+        <p>No habla Espanol? No problem with the hand-held Pocketalk Classic Language Translator.</p>
+        <a id="read-more" href="https://heavy.com/gifts/christmas-gifts-for-grandma/" target="_blank">Read More &nbsp;<i class="fas fa-chevron-circle-right"></i>
+        </a>
+      </div>
+      <div id="cnet">
+        <img id="cnet-img" src="/Product Landing Page/Images/cnet.png" alt="c|net logo">
+        <p>Pocketakj caught pretty much everything else I said to it in Arabic -- different dialects and all -- as well as my rusty high school Spanish.</p>
+        <a id="read-more" href="https://www.cnet.com/tech/computing/pocketalk-voice-translator-rolls-out-more-languages-and-features-at-ces-2021/" target="_blank">Read More &nbsp;<i class="fas fa-chevron-circle-right"></i>
+        </a>
+      </div>
+    </section>
+    <section id="more">
+      <div id="subscription-section">
+        <h1>Subscription</h1>
+        <p>Get update on sales specials and more.</p>
+        <form id="subs-form" action="https://www.freecodecamp.com/email-submit" target="_blank" autocomplete="on">
+          <input id="email2" type="email" name="email2" placeholder="Email address" required>
+          <button id="submit2" type="submit"><i class="fas fa-arrow-right fa-2x"></i></button>
+        </form>
+      </div>
+      <div id="social-media-section">
+          <h1>Follow Us</h1>
+          <p>We want to hear from you</p>
+          <div class="socmed-logo">
+            <a id="instagram" href="https://www.instagram.com/pocketalk/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a> &nbsp; &nbsp; &nbsp;
+            <a id="twitter" href="https://twitter.com/pocketalk" target="_blank"><i class="fab fa-twitter fa-2x"></i></a> &nbsp; &nbsp; &nbsp;
+            <a id="facebook" href="https://www.facebook.com/Pocketalk.US/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+          </div>
+      </div>
+    </section>
+  </main>
+</body>
+<footer>
+  <nav id="footer-bar">
+    <a class="privacy" href="https://www.pocketalk.com/privacy-policy/" target="_blank">Privacy Policy</a> &nbsp; &nbsp; &nbsp; 
+    <a class="cookie" href="https://www.pocketalk.com/#" target="_blank">Cookie Settings</a> &nbsp; &nbsp; &nbsp;
+    <a class="term" href="https://www.pocketalk.com/terms-conditions/" target="_blank">Terms & Conditions</a> &nbsp; &nbsp; &nbsp;
+    <a class="warranty" href="https://www.pocketalk.com/warranty/" target="_blank">Warranty</a> &nbsp; &nbsp; &nbsp;
+    <a class="shipping" href="https://www.pocketalk.com/shipping-policy/" target="_blank">Shipping Policy</a> &nbsp; &nbsp; &nbsp;
+    <a class="return" href="https://www.pocketalk.com/return-policy/" target="_blank">Return Policy</a> &nbsp; &nbsp; &nbsp;
+    <a class="contact" href="https://www.pocketalk.com/contact-us/" target="_blank">Contact</a> &nbsp; &nbsp; &nbsp;
+  </nav>
+</footer>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</html>

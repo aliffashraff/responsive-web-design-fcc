@@ -1,0 +1,142 @@
+#main{
+  background-color: rgb(212, 209, 221);
+  margin: auto;
+  width: 100%;
+  color:rgb(71, 71, 71);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 20px;
+}
+
+#title{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 65px;
+}
+
+#title p{
+  font-size: 20px;
+}
+
+#image{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+#img-caption{
+  text-align: center;
+}
+
+#quote{
+  text-align: center;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+q{
+  font-size: 50px;
+  font-style: italic;
+}
+
+cite{
+  font-size: 30px;
+}
+
+#tribute-info{
+  background-color: rgb(231, 223, 231);
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 1px;
+  max-width:1100px
+}
+
+h2{
+  text-align: center;
+  font-size: 37px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+ul{
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  padding-left: 0%;
+  list-style-type: none;
+}
+
+h3{
+  font-family: monospace;
+  font-size: 22px;
+}
+
+li p{
+  font-size: 18px;
+}
+.container{
+  background-color: rgb(255, 255, 255);
+  padding: 5px 30px 5px 20px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 2px solid rgb(71, 71, 71);
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#wikipedia{
+  text-align: center;
+  color: rgb(71, 71, 71);
+  font-size: 22px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+a{
+  text-decoration: none;
+  font-style: bold;
+}
+
+a:hover{
+  color: #0377CC;
+}
+
+a:active{
+  color: #084875;
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+  h1{
+    font-size: 50px;
+  }
+  #title p{
+    font-size: 17px;
+  }
+  q{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3, #wikipedia{
+    font-size: 18px;
+  }
+  li p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #tribute-info{
+    margin: 0px 30px;
+  }
+}

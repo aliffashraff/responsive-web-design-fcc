@@ -1,0 +1,628 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 20px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 232, 231, 0.97);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  z-index: 1;
+}
+
+#logo{
+  width: 180px;
+  margin-left: 7%;
+  margin-right: 10%;
+}
+
+#header-img{
+  width: 180px
+}
+
+#nav{
+  margin-right: 8%;
+}
+
+#nav-search{
+  margin-right: 1.5%;
+}
+
+#nav-cart{
+  margin-right: 7%;
+}
+
+a:visited, a:link{
+  color: rgb(66, 59, 59);
+  text-decoration: none;
+}
+
+a:active{
+  text-decoration: underline;
+}
+
+a:hover, #search-button:hover{
+  color: rgb(0, 0, 0);
+}
+
+#search-bar{
+  border: none;
+  background-color: inherit;
+  border-bottom: 2px solid rgb(66, 59, 59);;
+}
+
+#search-bar:focus{
+  outline: none;
+}
+
+#search-button{
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  color: rgb(66, 59, 59);
+}
+
+input[type=text], input[type=email]{
+  padding-left: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: rgb(66, 59, 59);
+  width: 230px;
+}
+
+input[type=search]{
+  padding-left: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: rgb(66, 59, 59);
+}
+
+body{
+  position: relative;
+  top: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title{
+  position: relative;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title::before {    
+  content: "";
+  background-image: url("https://cdn.pocketalk.com/wp-content/uploads/2019/12/PKT-LA-113.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(60%)
+}
+
+#title-content{
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+#title-content h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 70px;
+  color: white;
+}
+
+#title-content p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+#title-content #shop-now button{
+  height: 50px;
+  width: 150px;
+  border-radius: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+  background: khaki;
+}
+
+#shop-now:hover, #submit:hover, #learn-more button:hover{
+  filter: brightness(85%);
+}
+
+#register{
+  background-color: rgba(248, 238, 237, 0.97);
+  margin-left: 8%;
+  margin-right: 10%;
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+
+#register h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  margin-bottom: 7px;
+  /*margin: 25px 50px 7px 50px;*/
+  display: flex; 
+  justify-content: center;
+}
+
+#register p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 28px;
+  display: flex; 
+  justify-content: center;
+  /*margin: 0px 60px 28px 60px;*/
+}
+
+#name, #email, #name-label, #email-label{
+  margin: 6px 0px 10px 0px;
+}
+
+#submit{
+  width: 200px;
+  height: 30px;
+  margin: 10px 15px 0px 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background: rgb(112, 108, 108);
+  color: white;
+}
+
+#translation{
+  background: linear-gradient(to right, rgb(207, 173, 192), rgb(218, 186, 127));
+  padding: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.translation-desc, .built-in-desc{
+  max-width: 610px;
+  margin-left: 80px;
+}
+
+.translation-desc h1, .camera-desc h1, .built-in-desc h1, .vid-desc-section h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+} 
+
+.translation-desc p, .camera-desc p, .built-in-desc p, .vid-desc-section p{
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.translation-img, .built-in-img{
+  position: relative;
+  margin-right: 60px;
+}
+
+#voice-translation-img, #camera-translation-img{
+  width: 280px;
+  height: 450px;
+}
+
+#voice-translation-vid, #camera-translation-vid{
+  position: absolute;
+  border-radius: 20x;
+  width: 227px;
+  left: 9.5%;
+  top: 7.5%;
+}
+
+#camera{
+  background: linear-gradient(to left, rgb(207, 173, 192), rgb(218, 186, 127));
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-desc, .vid-desc-section{
+  max-width: 610px;
+  margin-right: 80px;
+}
+
+.camera-img{
+  position: relative;
+  margin-left: 60px;
+}
+
+#built-in{
+  background: linear-gradient(to right, rgb(207, 173, 192), rgb(218, 186, 127));
+  padding: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+#built-in-img{
+  width: 460px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+#vid{
+  position: relative;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+#vid::before{
+  content: "";
+  background-image: url('https://cdn.pocketalk.com/wp-content/uploads/2019/12/PKT-LA-470.jpg');
+  background-size: cover ;
+  background-attachment: scroll;
+  background-position: center;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+.vid-section #video{
+  border-radius: 10px;
+  margin-left: 60px;
+}
+
+.vid-desc-section h1, .vid-desc-section p{
+  color: white;
+}
+
+#learn-more button{
+  padding: 10px;
+  border-radius: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: rgb(62, 89, 129);
+}
+
+#products{
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  background: rgb(233, 229, 229);
+}
+
+#pocketalk-plus, #pocketalk-s, #pocketalk-classic{
+  background: white;
+  border-radius: 30px;
+  padding: 25px 30px;
+  margin: 0px 20px;
+  box-shadow: 4px 4px 8px black;
+  width: 380px;
+}
+
+#pocketalk-plus h1, #pocketalk-s h1, #pocketalk-classic h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+#p-plus{
+  width: 180px;
+  height: 320px;
+  margin: 0px 65px 25px 65px;
+}
+
+#p-s{
+  width: 300px;
+  height: 320px;
+  margin: 0px 8px 25px 8px;
+}
+
+#p-classic{
+  width: 170px;
+  height: 320px;
+  margin: 0px 72px 25px 72px;
+}
+
+#pocketalk-plus ul, #pocketalk-s ul, #pocketalk-classic ul{
+  margin: 0px 20px;
+  max-width: 280px;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+#products #shop-now button{
+  padding: 10px;
+  border-radius: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: rgb(224, 42, 57);
+}
+
+#pocketalk-plus #shop-now button, #pocketalk-s #shop-now button, #pocketalk-classic #shop-now button{
+  margin-bottom: 20px;
+}
+
+#reviews{
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+#pcmag, #wall-street, #heavy, #cnet{
+  width: 400px;
+  margin: 0px 20px
+}
+
+#pcmag p, #wall-street p, #heavy p, #cnet p{
+  text-align: justify;
+  line-height: 22px;
+  margin: 15px 0px;
+  height: 150px;
+}
+
+#pcmag-img, #wall-street-img, #heavy-img, #cnet-img{
+  height: 60px
+}
+
+#read-more:visited, #read-more:link{
+  font-weight: bold;
+  color: rgb(12, 45, 71);
+}
+
+#read-more:hover{
+  color: rgb(10, 87, 150)
+}
+
+#read-more:active{
+  text-decoration: none;
+}
+
+#more{
+  display: flex;
+}
+
+#more h1{
+  font-size: 35px;
+  font-family: monospace;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#more p{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center; 
+}
+
+#subscription-section{  
+  display: grid;
+  justify-content: center;
+  padding: 60px;
+  width: 50%;
+  background-color: rgb(192, 158, 138);
+}
+
+#social-media-section{
+  display: grid;
+  justify-content: center;
+  padding: 60px;
+  width: 50%;
+  background-color: rgb(131, 108, 100);
+  color: white;
+}
+
+.socmed-logo{
+  display: flex;
+  justify-content: center;
+}
+
+#instagram:visited, #facebook:visited, #twitter:visited, #instagram:link, #facebook:link, #twitter:link{
+  margin: 0px 20px;
+  color: white;
+}
+
+#instagram:hover, #facebook:hover, #twitter:hover{
+  color: black;
+}
+
+#subs-form{
+  display: flex;
+  justify-content: center;
+}
+
+#email2{
+  height: 40px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+#submit2{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+#submit2:hover{
+  color: white;
+  background-color: black;
+}
+
+#footer-bar{
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+  font-size: 13px;
+  background: rgb(240, 232, 231, 0.97);
+}
+
+.privacy, .cookie, .term, .warranty, .shipping, .return, .contact{
+  margin: 0px 9px;
+}
+
+@media screen and (max-width: 700px){
+  #title-content h1{
+    font-size: 60px;
+  }
+  #title-content p{
+    font-size: 25px;
+  }
+  #title-content #shop-now button{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+  }
+  #footer-bar{
+   font-size: 9px; 
+  }
+  #footer-bar{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 940px){
+  #nav{
+    display: none;
+  }
+  #nav-search{
+    margin-left: 50%;
+  }
+  #register{
+    display: none;
+  }
+  #more{
+    flex-direction: column;
+  }
+  #subscription-section, #social-media-section{
+    width: 100%;
+  }
+  .privacy, .cookie, .term, .warranty, .shipping, .return, .contact{
+    margin: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 1070px){
+  #logo, #header-img{
+    width: 110px;
+  }
+  #nav{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #translation, #camera, #built-in, #reviews{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .translation-desc, .built-in-desc, .translation-img, .built-in-img, .camera-desc, .vid-desc-section, .camera-img, .vid-section #video{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #voice-translation-img, #camera-translation-img{
+    width: 180px;
+    height: 312px;
+    margin-bottom: 20px;
+  }
+  #built-in-img{
+    width: 260px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  #voice-translation-vid, #camera-translation-vid{
+    width: 145px;
+    left: 9%;
+    top: 7.5%;
+  }
+  #vid{
+    flex-direction: column;
+  }
+  .vid-section #video{
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .translation-desc h1, .camera-desc h1, .built-in-desc h1, .vid-desc-section h1{
+    font-size: 40px;
+  }
+  .translation-desc p, .camera-desc p, .built-in-desc p, .vid-desc-section p{
+    font-size: 17px;
+  }
+  #pcmag, #wall-street, #heavy{
+    margin-top: 50px;
+  }
+  #pcmag p, #wall-street p, #heavy p, #cnet p{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1255px){
+  #logo, #nav{
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 1280px){/*product*/
+  #products{
+    flex-direction: column;
+    align-items: center;
+  }
+  #pocketalk-plus, #pocketalk-s, #pocketalk-classic{
+    margin: 20px 0px; 
+    width: 300px;
+  }
+  #pocketalk-plus h1, #pocketalk-s h1, #pocketalk-classic h1{
+    font-size: 22px;
+  }
+  #pocketalk-plus ul, #pocketalk-s ul, #pocketalk-classic ul{
+    font-size: 14px;
+  }
+  #p-plus, #p-classic{
+    width: 140px;
+    height: 250px;
+    margin: 0px 50px 25px 50px;
+  }
+  #p-s{
+    width: 200px;
+    height: 220px;
+    margin: 0px 18px 25px 18px;
+  }
+}
+
+@media screen and (max-width: 1510px){
+  #search-bar{
+    display: none;
+  }
+}

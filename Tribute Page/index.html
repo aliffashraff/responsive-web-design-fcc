@@ -1,0 +1,117 @@
+<!--
+Web Page Structure
+1. User Stories (user experience)
+2. Create Wireframe (UI/UX layout/concept design for web/apps eg:lucidapp/figma)
+3. HTML
+4. CSS
+5. Test (in this case: "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" which run in js)
+-->
+
+<!--
+  User Stories
+  1. id="main"
+  2. id="title" (title of tribute page)
+  3. id="img-div" (div element correspond)
+  4. id="image" (within img-div correspond to img element)
+  5. id="img-caption" (caption of the image)
+  6. id="tribute-info" (content of the tribute page)
+  7. id="tribute-link" (with <a> element link outside tribute page using attribute target="_blank")
+  8. img element responsive resize
+  9. img element centered in its parent element
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Steve Jobs</title>
+</head>
+<body>
+  <main id="main">
+    <div id="title">
+      <h1>Steve Jobs</h1>    
+      <p>The man who was called Thomas Edison in his time</p>
+    </div>
+    <div id="img-div">
+      <figure>
+        <img id="image" src="https://phandroid.com/wp-content/uploads/2012/04/steve-jobs-holding-iphone-550x412.jpg" alt="Steve Jobs presenting iPhone 4 in 2010">
+        <figcaption id="img-caption">
+          Steve Jobs, the co-founder of Apple presenting iPhone 4 in 2010
+        </figcaption>
+      </figure>
+    </div>
+    <div id="quote">
+      <q cite="https://www.washingtonpost.com/blogs/answer-sheet/post/steve-jobs-told-students-stay-hungry-stay-foolish/2011/10/05/gIQA1qVjOL_blog.html">
+        Stay hungry, Stay foolish
+      </q>
+      <cite><br>- Steve Jobs</cite>
+    </div>
+    <div id="tribute-info">
+      <h2><u>Timeline</u></h2>
+      <div class="timeline">
+        <ul>
+          <li class="container">
+            <h3>Feb, 1995</h3>
+            <p>Steve was born in San Francisco, the son of Abdulfattah Jandali and Joanne Schieble. He is quickly adopted by Paul and Clara Jobs</p>
+          </li>
+          <li class="container">
+            <h3>1960</h3>
+            <p>The Jobs family moves from San Francisco to Mountain View, a suburban town in Santa Clara county, more commonly known as Silicon Valley</p>
+          </li>
+          <li class="container">
+            <h3>1969</h3>
+            <p>Steve Jobs meets Steve Wozniak, 5 years older, through a mutual friend. Woz and Steve share a love of electronics, Bob Dylan, and pranks</p>
+          </li>
+          <li class="container">
+            <h3>1972</h3>
+            <p>Steve and Woz build and illegally sell 'blue boxes' that allow to make phone calls for free</p>
+          </li>
+          <li class="container">
+            <h3>Mar, 1976</h3>
+            <p>Woz and Steve show the early Apple I board at the Homebrew Computer Club</p>
+          </li>
+          <li class="container">
+            <h3>Apr,1976</h3>
+            <p>Apple Computer Inc. is incorporated by Steve Jobs, Steve Wozniak and Ron Wayne</p>
+          </li>
+          <li class="container">
+            <h3>1978</h3>
+            <p>The Apple II becomes the first mass-market personal computer, with impressive sales around the US. Apple becomes a symbol of the personal computing revolution</p>
+          </li>
+          <li class="container">
+            <h3>Sep, 1985</h3>
+            <p>Steve Jobs resigns from Apple and starts NeXT with five other refugees from Apple. Apple announces it will sue NeXT</p>
+          </li>
+          <li class="container">
+            <h3>Jan 1992</h3>
+            <p>NeXT licenses its operating system, NeXTSTEP, to run on x86 machines</p>
+          </li>
+          <li class="container">
+            <h3>Dec, 1996</h3>
+            <p>Apple, which was desperately looking for a modern operating system to buy, eventually buys NeXT for $400 million. Steve Jobs is named "informal adviser" to Apple CEO Gil Ameli</p>
+          </li>
+          <li class="container">
+            <h3>July, 1997</h3>
+            <p>Gil Amelio is ousted by the Apple Board of directors after a disastrous quarter. Steve Jobs is named interim CEO in his place and installs his NeXT executive team at the top of Apple</p>
+          </li>
+          <li class="container">
+            <h3>Aug, 2011</h3>
+            <p>Steve Jobs resigns as CEO of Apple, with the words 'I have always said if there ever came a day when I could no longer meet my duties and expectations as Apple's CEO, I would be the first to let you know. Unfortunately, that day has come.' Tim Cook becomes Apple CEO</p>
+          </li>
+          <li class="container">
+            <h3>Oct, 2011</h3>
+            <p>Steve Jobs dies at home, surrounded by his family</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wikipedia">
+      <p>Find out more about Steve Jobs on <a id="tribute-link" href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">Wikipedia</a></p>
+    </div>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

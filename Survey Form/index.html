@@ -1,0 +1,150 @@
+<!--
+Web Page Structure
+1. User Stories (user experience)
+2. Create Wireframe (UI/UX layout/concept design for web/apps eg:lucidapp/figma)
+3. HTML
+4. CSS
+5. Test (in this case: "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" which run in js)
+-->
+
+<!-- 
+User Stories
+1. id="title" in h1 text
+2. id="description" in <p>
+3. form with id="survey-form"
+4. enter name in id="name"
+5. enter email in id="email"
+6. HTML validation error if email format not right
+7. enter number in id="number"
+8. HTML validation error if not number
+9. HTML validation error if number outside range
+10. label that describe the field of each form with id="name-label" id="email-label" & id="number-label"
+11. For the name, email, and number input fields, put placeholder for description
+12. select option inside form element with id="dropdown"
+13. select field from radio button in the form element with 'name' attribute
+14. can check a series of checkbox with 'value' attribute
+15. textarea for additional comments
+16. button with id="submit" to submit all inputs
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=" style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <main id="main">
+    <div id="title-desc">
+      <h1 id="title">
+        Movies & TV Shows Survey Form
+      </h1>
+      <p id="description">
+        We would like to review your preferences in order to build the best platform that suits your likes
+      </p>
+    </div>
+    <div id="survey-outline">
+      <form id="survey-form" action="/action_page.php" target="_blank" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+            <div id="form-group">
+              <label id="name-label" for="name">Insert your name</label><br>
+              <input id="name" type="text" name="name" placeholder="Full name" required>
+            </div>
+            <div id="form-group">
+              <label id="id-label" for="identification">Insert your ID number</label><br>
+              <input id="identification" type="text" name="identification" placeholder="xxxxxx-xx-xxxx" pattern="[0-9]{6}-[0-9]{2}-[0-9]{4}" required>
+            </div>
+            <div id="form-group">
+              <label id="email-label" for="email">Insert your email</label><br>
+              <input id="email" type="email" name="email" placeholder="abc@gmail.com" required>
+            </div>
+            <div id="form-group">
+              <label id="number-label"for="number">Insert your age</label><br>
+              <input id="number" type="number" name="age" placeholder="Age" min="10" max="99" required>
+            </div>
+            <div id="form-group">
+              <label id="numphone-label" for="numphone">Insert your phone number (Optional) </label><br>
+              <input id="numphone" type="tel" name="numphone" placeholder="012xxxxxxx" max="11">
+            </div>
+            <div id="form-group">
+              <p>Select your gender</p>
+              <input id="male" type="radio" name="gender" value="male">
+              <label id="male-label" for="male">Male</label><br>
+              <input id="female" type="radio" name="gender" value="female">
+              <label id="female-label" for="female">Female</label>
+            </div>
+            <div id="form-group">
+              <p>Select your current status</p>
+              <input id="single" type="radio" name="status" value="single">
+              <label id="single-label" for="single">Single</label><br>
+              <input id="married" type="radio" name="status" value="married">
+              <label id="married-label" for="married">Married</label><br>
+              <input id="divorced" type="radio" name="status" value="divorced">
+              <label id="divorced-label" for="divorced">Divorced</label>
+            </div>
+            <div id="form-group">
+              <label id="role-label" for="dropdown">Select your current role</label><br>
+              <select id="dropdown" name="role">
+                <option id="disabled" disabled selected value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-worker">Full time employee</option>
+                <option value="part-time-worker">Part time employee</option>
+                <option value="unemployed">Unemployed</option>
+              </select>
+            </div>
+        </fieldset>
+        <div id="form-group">
+          <p>Select your favourite type shows</p>
+          <input id="tv-shows" type="checkbox" name="type" value="tv-shows">
+          <label id="tv-shows-label" for="tv-shows">TV Shows</label><br>
+          <input id="variety-shows" type="checkbox" name="type" value="variety-shows">
+          <label id="variety-shows-label" for="variety-shows">Variety Shows</label><br>
+          <input id="movies" type="checkbox" name="type" value="movies">
+          <label id="movies-label" for="movies">Movies</label>
+        </div>
+        <div id="form-group">
+          <p>Select your favourite genres</p>
+          <input id="action" type="checkbox" name="genre" value="action">
+          <label id="action-label" for="action">Action</label><br>
+          <input id="animation" type="checkbox" name="genre" value="animation">
+          <label id="animation-label" for="animation">Animation</label><br>
+          <input id="fantasy" type="checkbox" name="genre" value="fantasy">
+          <label id="fantasy-label" for="fantasy">Fantasy</label><br>
+          <input id="documentary" type="checkbox" name="genre" value="documentary">
+          <label id="documentary-label" for="documentary">Documentary</label><br>
+          <input id="comedy" type="checkbox" name="genre" value="comedy">
+          <label id="comedy-label" for="action">Comedy</label><br>
+          <input id="drama" type="checkbox" name="genre" value="drama">
+          <label id="drama-label" for="drama">Drama</label><br>
+          <input id="thriller" type="checkbox" name="genre" value="thriller">
+          <label id="thriller-label" for="thriller">Thriller</label><br>
+          <input id="crime" type="checkbox" name="genre" value="crime">
+          <label id="crime-label" for="crime">Crime</label><br>
+          <input id="adventure" type="checkbox" name="genre" value="adventure">
+          <label id="adventure-label" for="adventure">Adventure</label><br>
+          <input id="horror" type="checkbox" name="genre" value="horror">
+          <label id="horror-label" for="horror">Horror</label><br>
+          <input id="romance" type="checkbox" name="genre" value="romance">
+          <label id="romance-label" for="crime">Romance</label><br>
+          <input id="science-fiction" type="checkbox" name="genre" value="science-fiction">
+          <label id="science-fiction-label" for="science-fiction">Science Fiction</label><br>
+        </div>
+        <div id="form-group">
+          <p>Any comments or suggestions to improve the platform?</p>
+          <textarea name="comments" placeholder="Add your comments here"></textarea>
+        </div>
+        <div id="form-group">
+          <input id="submit" type="submit" value="Submit">
+          <input id="reset" type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+    <p id="last">Thank you for your time and cooperation</p>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
